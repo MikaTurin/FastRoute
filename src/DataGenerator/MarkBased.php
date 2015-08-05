@@ -8,8 +8,8 @@ class MarkBased extends RegexBasedAbstract {
     }
 
     protected function processChunk($regexToRoutesMap) {
-        $routeMap = [];
-        $regexes = [];
+        $routeMap = array();
+        $regexes = array();
         $markName = 'a';
         foreach ($regexToRoutesMap as $regex => $route) {
             $regexes[] = $regex . '(*MARK:' . $markName . ')';

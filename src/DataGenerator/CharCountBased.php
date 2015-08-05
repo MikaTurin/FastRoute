@@ -8,8 +8,8 @@ class CharCountBased extends RegexBasedAbstract {
     }
 
     protected function processChunk($regexToRoutesMap) {
-        $routeMap = [];
-        $regexes = [];
+        $routeMap = array();
+        $regexes = array();
 
         $suffixLen = 0;
         $suffix = '';

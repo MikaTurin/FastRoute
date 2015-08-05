@@ -15,7 +15,7 @@ class GroupCountBased extends RegexBasedAbstract {
 
             list($handler, $varNames) = $data['routeMap'][count($matches)];
 
-            $vars = [];
+            $vars = array();
             $i = 0;
             foreach ($varNames as $varName) {
                 $vars[$varName] = $matches[++$i];

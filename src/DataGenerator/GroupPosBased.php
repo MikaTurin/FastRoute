@@ -8,8 +8,8 @@ class GroupPosBased extends RegexBasedAbstract {
     }
 
     protected function processChunk($regexToRoutesMap) {
-        $routeMap = [];
-        $regexes = [];
+        $routeMap = array();
+        $regexes = array();
         $offset = 1;
         foreach ($regexToRoutesMap as $regex => $route) {
             $regexes[] = $regex;

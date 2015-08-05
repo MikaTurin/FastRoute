@@ -89,7 +89,7 @@ abstract class RegexBasedAbstract implements DataGenerator {
 
     private function buildRegexForRoute($routeData) {
         $regex = '';
-        $variables = [];
+        $variables = array();
         foreach ($routeData as $part) {
             if (is_string($part)) {
                 $regex .= preg_quote($part, '~');

@@ -15,7 +15,7 @@ class CharCountBased extends RegexBasedAbstract {
 
             list($handler, $varNames) = $data['routeMap'][end($matches)];
 
-            $vars = [];
+            $vars = array();
             $i = 0;
             foreach ($varNames as $varName) {
                 $vars[$varName] = $matches[++$i];

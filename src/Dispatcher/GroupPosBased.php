@@ -18,7 +18,7 @@ class GroupPosBased extends RegexBasedAbstract {
 
             list($handler, $varNames) = $data['routeMap'][$i];
 
-            $vars = [];
+            $vars = array();
             foreach ($varNames as $varName) {
                 $vars[$varName] = $matches[$i++];
             }

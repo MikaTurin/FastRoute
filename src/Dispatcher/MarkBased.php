@@ -15,7 +15,7 @@ class MarkBased extends RegexBasedAbstract {
 
             list($handler, $varNames) = $data['routeMap'][$matches['MARK']];
 
-            $vars = [];
+            $vars = array();
             $i = 0;
             foreach ($varNames as $varName) {
                 $vars[$varName] = $matches[++$i];

@@ -13,7 +13,7 @@ abstract class RegexBasedAbstract implements Dispatcher {
     public function dispatch($httpMethod, $uri) {
         if (isset($this->staticRouteMap[$httpMethod][$uri])) {
             $handler = $this->staticRouteMap[$httpMethod][$uri];
-            return [self::FOUND, $handler, []];
+            return [self::FOUND, $handler, array()];
         } else if ($httpMethod === 'HEAD' && isset($this->staticRouteMap['GET'][$uri])) {
             $handler = $this->staticRouteMap['GET'][$uri];
             return [self::FOUND, $handler, []];
